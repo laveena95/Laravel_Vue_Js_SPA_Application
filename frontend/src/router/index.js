@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Article from '../views/Article.vue'
+import Articles from '../views/Articles.vue'
 
 Vue.use(VueRouter)
 
@@ -13,9 +13,9 @@ Vue.use(VueRouter)
   },
 
   {
-    path: '/article',
-    name: 'article',
-    component: Article
+    path: '/articles',
+    name: 'articles',
+    component: Articles
   },
 
   {

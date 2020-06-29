@@ -1,5 +1,5 @@
 <template>
-  <div class="article">
+  <div class="articles">
       <div v-for="item in articles" :key="item.id">
           <h1>{{ item.title }}</h1>
           <p>{{ item.body }}</p>
@@ -27,7 +27,7 @@ export default {
                 .get('/api/articles')
                 .then(res=>{
                     const{data:{data}} = res
-                    this.arcticle= data
+                    this.arcticles= data
                     console.log(res)
                 })
                 .catch(err =>{console.log(err)})
